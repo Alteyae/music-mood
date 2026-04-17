@@ -1,0 +1,25 @@
+{
+  "id2label": {
+    "0": "happy",
+    "1": "sad",
+    "2": "angry",
+    "3": "calm",
+    "4": "anxious",
+    "5": "focused",
+    "6": "loved",
+    "7": "melancholic",
+    "8": "confident"
+  },
+  "label2id": {
+    "happy": 0,
+    "sad": 1,
+    "angry": 2,
+    "calm": 3,
+    "anxious": 4,
+    "focused": 5,
+    "loved": 6,
+    "melancholic": 7,
+    "confident": 8
+  },
+  "confidence_threshold": 0.4
+}

@@ -1,0 +1,8 @@
+transformers==4.40.2
+optimum[onnxruntime]==1.19.2
+onnxruntime==1.18.0
+torch==2.2.2
+datasets==2.19.1
+scikit-learn==1.4.2
+requests==2.31.0
+streamlit==1.34.0
