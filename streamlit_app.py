@@ -129,8 +129,8 @@ def model_predict(text: str) -> dict:
 # ── Spotify helpers ───────────────────────────────────────────────────────────
 @st.cache_data(ttl=3500)  # token expires in 3600s
 def get_spotify_token() -> str | None:
-    client_id     = os.environ.get("SPOTIFY_CLIENT_ID", "")
-    client_secret = os.environ.get("SPOTIFY_CLIENT_SECRET", "")
+    client_id     = st.secrets.get("SPOTIFY_CLIENT_ID", "") or os.environ.get("SPOTIFY_CLIENT_ID", "")
+    client_secret = st.secrets.get("SPOTIFY_CLIENT_SECRET", "") or os.environ.get("SPOTIFY_CLIENT_SECRET", "")
     if not client_id or not client_secret:
         return None
     creds = base64.b64encode(f"{client_id}:{client_secret}".encode()).decode()
